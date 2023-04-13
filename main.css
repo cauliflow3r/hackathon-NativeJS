@@ -79,3 +79,23 @@ nav ul li a:hover {
   }
 }
 /* @media (max-width:) */
+.forum_container {
+  display: flex;
+  width: 80vw;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.forem {
+  display: flex;
+  width: 80vw;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.forum {
+  display: flex;
+  justify-content: space-between;
+}
+.btns {
+}
