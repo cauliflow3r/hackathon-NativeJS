@@ -1,11 +1,73 @@
 {
-  "users": [],
+  "users": [
+    {
+      "username": "Cumcollector",
+      "ballance": 50
+    }
+  ],
+  "items": [
+    {
+      "image": "",
+      "itemName": "банка бобов",
+      "itempPrice": 50
+    }
+  ],
   "admin": [],
   "forum": [
     {
       "name": "adlawda",
-      "last-name": "adaw",
-      "comment": "ЖОПА"
+      "comment": "ЖОПА",
+      "id": 1
+    },
+    {
+      "name": "adlawda",
+      "comment": "ЖОПА",
+      "id": 2
+    },
+    {
+      "name": "adlawda",
+      "comment": "ЖОПА",
+      "id": 3
+    },
+    {
+      "name": "adlawda",
+      "comment": "ЖОПА",
+      "id": 4
+    },
+    {
+      "name": "dwadaw",
+      "comment": "dwadwadaw",
+      "id": 5
+    },
+    {
+      "name": "dwadaw",
+      "comment": "dwadwadaw",
+      "id": 6
+    },
+    {
+      "name": "dwadaw",
+      "comment": "dwadwadaw",
+      "id": 7
+    },
+    {
+      "name": "dwadaw",
+      "comment": "dwadwadaw",
+      "id": 8
+    },
+    {
+      "name": "dwadaw",
+      "comment": "dwadwadaw",
+      "id": 9
+    },
+    {
+      "name": "fvefvree",
+      "comment": "vevrefre",
+      "id": 10
+    },
+    {
+      "name": "frefref",
+      "comment": "fefrefref",
+      "id": 11
     }
   ]
 }
