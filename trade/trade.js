@@ -133,6 +133,10 @@ readItems()
 // Добавляем слушатель события "click" на кнопку "btnCreate"
 itemCreationForm.addEventListener("submit", (e) => {
   e.preventDefault()
+  if (!itemName.value.trim() || !itemImage.value.trim()||!itemPrice.value.trim()||!itemAddress.value.trim()) {
+    alert("Заполните все поля!");
+    return;
+  }
   // Получаем данные из формы (предполагаем, что они уже валидированы и подготовлены)
   let itemData = {
     image: itemImage.value,
@@ -140,7 +144,7 @@ itemCreationForm.addEventListener("submit", (e) => {
     price: itemPrice.value,
     address: itemAddress.value
   };
-  console.log(itemData)
+  // console.log(itemData)
   createItem(itemData); // Отправляем данные на сервер
 });
 

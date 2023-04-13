@@ -46,24 +46,26 @@
       "price": "2121",
       "address": "dsadasd",
       "id": 6
+    },
+    {
+      "image": "https://i.pinimg.com/originals/f9/1e/28/f91e28ba3f5e20f1ac6b04e3993f13a3.jpg",
+      "name": "edwd",
+      "price": "2121",
+      "address": "dwedew",
+      "id": 7
     }
   ],
   "admin": [],
   "forum": [
     {
-      "name": "dnwjkadn",
-      "comment": "kjdnwakd",
-      "id": 1
+      "name": "aslan",
+      "comment": "joras gay",
+      "id": 4
     },
     {
-      "name": "dbwjakdb",
-      "comment": "djkwajndaw",
-      "id": 2
-    },
-    {
-      "name": "jora ",
-      "comment": "im gay",
-      "id": 3
+      "name": "fhjfjh",
+      "comment": "bnchj",
+      "id": 5
     }
   ]
 }
