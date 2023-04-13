@@ -1,5 +1,17 @@
 {
-  "users": [],
+  "users": [
+    {
+      "username": "Cumcollector",
+      "ballance": 50
+    }
+  ],
+  "items": [
+    {
+      "image": "",
+      "itemName": "банка бобов",
+      "itempPrice": 50
+    }
+  ],
   "admin": [],
   "forum": [
     {
