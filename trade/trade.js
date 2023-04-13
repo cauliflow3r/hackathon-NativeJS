@@ -90,8 +90,8 @@ let itemName = document.querySelector('#inpName')
 let itemImage = document.querySelector('#inpImg')
 let itemPrice = document.querySelector('#inpPrice')
 let itemAddress = document.querySelector('#address')
-
-let btnCreate = document.getElementById("btnCreate");
+// let btnCreate = document.getElementById("btnCreate");
+let itemCreationForm = document.querySelector('#itemCreationForm')
 let cardsContainer = document.querySelector(".cardsContainer")
 let prevBtn = document.querySelector("#prevBtn");
 let nextBtn = document.querySelector("#nextBtn");
@@ -111,8 +111,8 @@ async function readItems() {
           src="${element.image}"
           alt="Фото 1"
         />
-        <h3>${element.itemName}</h3>
-        <p>${element.itemPrice}</p>
+        <h3>${element.name}</h3>
+        <p>${element.price}</p>
       </div>`;
   });
 }
@@ -128,16 +128,19 @@ async function createItem(itemData) {
   });
   readItems(); 
 }
+readItems()
 
 // Добавляем слушатель события "click" на кнопку "btnCreate"
-btnCreate.addEventListener("click", () => {
+itemCreationForm.addEventListener("submit", (e) => {
+  e.preventDefault()
   // Получаем данные из формы (предполагаем, что они уже валидированы и подготовлены)
   let itemData = {
-    img: itemImage.value,
+    image: itemImage.value,
     name: itemName.value,
     price: itemPrice.value,
     address: itemAddress.value
   };
+  console.log(itemData)
   createItem(itemData); // Отправляем данные на сервер
 });
 

@@ -8,20 +8,62 @@
   "items": [
     {
       "image": "https://extrago.ru/wp-content/uploads/2015/10/volwebnie_bobi_ng-1.jpg",
-      "itemName": "банка бобов",
-      "itempPrice": 50,
+      "name": "банка бобов",
+      "price": 50,
       "id": 1
     },
     {
+      "image": "https://i.pinimg.com/originals/f9/1e/28/f91e28ba3f5e20f1ac6b04e3993f13a3.jpg",
+      "name": "edwd",
+      "price": "2121",
+      "address": "dwadad",
       "id": 2
+    },
+    {
+      "image": "https://i.pinimg.com/originals/f9/1e/28/f91e28ba3f5e20f1ac6b04e3993f13a3.jpg",
+      "name": "dszdsz",
+      "price": "212",
+      "address": "dsfsd",
+      "id": 3
+    },
+    {
+      "image": "https://i.pinimg.com/originals/f9/1e/28/f91e28ba3f5e20f1ac6b04e3993f13a3.jpg",
+      "name": "dasasd",
+      "price": "2121",
+      "address": "dsadasdsa",
+      "id": 4
+    },
+    {
+      "image": "https://i.pinimg.com/originals/f9/1e/28/f91e28ba3f5e20f1ac6b04e3993f13a3.jpg",
+      "name": "dassad",
+      "price": "221",
+      "address": "dasa",
+      "id": 5
+    },
+    {
+      "image": "https://i.pinimg.com/originals/f9/1e/28/f91e28ba3f5e20f1ac6b04e3993f13a3.jpg",
+      "name": "edwd",
+      "price": "2121",
+      "address": "dsadasd",
+      "id": 6
     }
   ],
   "admin": [],
   "forum": [
     {
-      "name": "dwnakd",
-      "comment": "ndwladw",
+      "name": "dnwjkadn",
+      "comment": "kjdnwakd",
       "id": 1
+    },
+    {
+      "name": "dbwjakdb",
+      "comment": "djkwajndaw",
+      "id": 2
+    },
+    {
+      "name": "jora ",
+      "comment": "im gay",
+      "id": 3
     }
   ]
 }
