@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+nav {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  max-width: 120px;
+  max-height: 120px;
+}
+nav ul {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
