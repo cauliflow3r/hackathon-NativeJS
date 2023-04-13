@@ -69,3 +69,10 @@ async function deleteComment(id) {
   // console.log("deleted");
 }
 // deleteBtn.addEventListener("click", deleteComment());
+
+
+
+
+
+
+

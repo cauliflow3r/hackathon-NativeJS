@@ -52,14 +52,51 @@
       </div>
     </div>
     <!-- start two buttons -->
-    <div class="container">
-      <div class="twobtn">
-        <button id="prevBtn" class="btn btnOne active"><</button>
-        <button id="nextBtn" class="btn btnTwo">></button>
-
-        <!-- need to link fontawesome...  -->
-        <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-        <!-- need to link fontawesome...  -->
+    <!-- <div style="margin-left: 60px" class="container"> -->
+    <div class="twoBtn">
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
+    </div>
+    <!-- </div> -->
+    <div class="modalEdit">
+      <div id="modal" class="editModal">
+        <button id="closeEditModal">X</button>
+        <!-- <div id="modal-r"> -->
+        <form id="editForm" class="formEdit">
+          <h1>Edit</h1>
+          <input
+            type="text"
+            placeholder="Название"
+            class="editInps"
+            id="editInpName"
+          />
+          <input
+            type="url"
+            placeholder="Ссылка на фото"
+            class="editInps"
+            id="editInpImage"
+          />
+          <input
+            type="number"
+            placeholder="Прайс"
+            class="editInps"
+            id="editInpPrice"
+          />
+          <input
+            type="text"
+            placeholder="Пересичение улиц"
+            class="editInps"
+            id="editAddress"
+          />
+          <input
+            type="text"
+            placeholder="Описание"
+            class="editInps"
+            id="editInpDesc"
+          />
+          <button type="submit">save changes</button>
+        </form>
+        <!-- </div> -->
       </div>
     </div>
 
