@@ -7,9 +7,13 @@
   ],
   "items": [
     {
-      "image": "",
+      "image": "https://extrago.ru/wp-content/uploads/2015/10/volwebnie_bobi_ng-1.jpg",
       "itemName": "банка бобов",
-      "itempPrice": 50
+      "itempPrice": 50,
+      "id": 1
+    },
+    {
+      "id": 2
     }
   ],
   "admin": [],
