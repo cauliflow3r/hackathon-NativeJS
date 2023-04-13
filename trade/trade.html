@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./trade.css" />
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="../Container/images/image-removebg-preview.png" alt="LOGO" />
+      <ul>
+        <li><a href="index.html">Main</a></li>
+        <li><a href="../Community/Community.html">Community</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="./trade.html">Trade</a></li>
+        <li><a href="about.html">About us</a></li>
+      </ul>
+      <div class="nav-btns">
+        <button id="register">Register</button>
+        <button id="sign-up">Sign up</button>
+      </div>
+    </nav>
+    <section class="search">
+      <input id="inpSearch" type="text" placeholder="Поиск по товарам" />
+      <button>search</button>
+    </section>
+    <form>
+      <div class="product">
+        <input placeholder="Название" type="text" id="inpName" class="inputs" />
+        <input
+          placeholder="Изображение"
+          type="url"
+          id="inpImg"
+          class="inputs"
+        />
+        <input placeholder="Цена" type="price" id="inpNumber" class="inputs" />
+        <input placeholder="Адрес" type="text" id="address" class="inputs" />
+        <button id="btnCreate">Создать</button>
+      </div>
+    </form>
+    <div class="cardsContainer">
+      <div class="card">
+        <img
+          src="https://extrago.ru/wp-content/uploads/2015/10/volwebnie_bobi_ng-1.jpg"
+          alt="Фото 1"
+        />
+        <h3>Карточка 1</h3>
+        <p>Рассенка: Рассенка 1</p>
+      </div>
+    </div>
+
+    <script src="./trade.js"></script>
+  </body>
+</html>
