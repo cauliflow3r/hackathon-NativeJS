@@ -1,0 +1,97 @@
+.forem_big {
+  padding-left: 100px;
+  display: flex;
+}
+.forem_right {
+  padding-top: 100px;
+  padding-left: 200px;
+}
+.forem_right img {
+  width: 1000px;
+  height: 500px;
+}
+.forem {
+  display: flex;
+  padding-left: 30px;
+}
+
+.forum {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.forum h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.forum h3 {
+  font-size: 14px;
+  color: #666;
+  margin-top: 0;
+}
+
+.forum img {
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.forum hr {
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.forum1,
+.forum2,
+.forum3,
+.forum4 {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.forum1 h2,
+.forum2 h2,
+.forum3 h2,
+.forum4 h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.forum1 h3,
+.forum2 h3,
+.forum3 h3,
+.forum4 h3 {
+  font-size: 14px;
+  color: #666;
+  margin-top: 0;
+}
+
+.forum1 img,
+.forum2 img,
+.forum3 img,
+.forum4 img {
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.forum1 hr,
+.forum2 hr,
+.forum3 hr,
+.forum4 hr {
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.forem_right img {
+  width: 300px;
+  display: block;
+  margin-top: 20px;
+}
