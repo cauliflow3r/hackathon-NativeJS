@@ -27,7 +27,7 @@
       <input id="inpSearch" type="text" placeholder="Поиск по товарам" />
       <button>search</button>
     </section>
-    <form>
+    <form id="itemCreationForm">
       <div class="product">
         <input placeholder="Название" type="text" id="inpName" class="inputs" />
         <input
@@ -36,9 +36,9 @@
           id="inpImg"
           class="inputs"
         />
-        <input placeholder="Цена" type="price" id="inpNumber" class="inputs" />
+        <input placeholder="Цена" type="price" id="inpPrice" class="inputs" />
         <input placeholder="Адрес" type="text" id="address" class="inputs" />
-        <button id="btnCreate">Создать</button>
+        <button id="btnCreate" type="submit">Создать</button>
       </div>
     </form>
     <div class="cardsContainer">
@@ -49,6 +49,54 @@
         />
         <h3>Карточка 1</h3>
         <p>Рассенка: Рассенка 1</p>
+      </div>
+    </div>
+    <!-- start two buttons -->
+    <!-- <div style="margin-left: 60px" class="container"> -->
+    <div class="twoBtn">
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
+    </div>
+    <!-- </div> -->
+    <div class="modalEdit">
+      <div id="modal" class="editModal">
+        <button id="closeEditModal">X</button>
+        <!-- <div id="modal-r"> -->
+        <form id="editForm" class="formEdit">
+          <h1>Edit</h1>
+          <input
+            type="text"
+            placeholder="Название"
+            class="editInps"
+            id="editInpName"
+          />
+          <input
+            type="url"
+            placeholder="Ссылка на фото"
+            class="editInps"
+            id="editInpImage"
+          />
+          <input
+            type="number"
+            placeholder="Прайс"
+            class="editInps"
+            id="editInpPrice"
+          />
+          <input
+            type="text"
+            placeholder="Пересичение улиц"
+            class="editInps"
+            id="editAddress"
+          />
+          <input
+            type="text"
+            placeholder="Описание"
+            class="editInps"
+            id="editInpDesc"
+          />
+          <button type="submit">save changes</button>
+        </form>
+        <!-- </div> -->
       </div>
     </div>
 

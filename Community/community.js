@@ -3,6 +3,7 @@ let user = document.querySelector("#username");
 let comment = document.querySelector("#comment");
 let forumContainer = document.querySelector(".forum_container"); // fixed variable name
 let postBtn = document.querySelector("#postBtn");
+let creationForm = document.querySelector('.forem');
 let deleteBtn = document.querySelector("#deleteBtn");
 
 async function readComments() {
@@ -31,7 +32,7 @@ async function readComments() {
 
 readComments();
 
-postBtn.addEventListener("submit", (e) => {
+creationForm.addEventListener("submit", (e) => {
   e.preventDefault();
   //   Проверка на заполненность полей
   if (!comment.value.trim() || !user.value.trim()) {
@@ -68,3 +69,10 @@ async function deleteComment(id) {
   // console.log("deleted");
 }
 // deleteBtn.addEventListener("click", deleteComment());
+
+
+
+
+
+
+

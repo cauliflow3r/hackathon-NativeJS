@@ -1,4 +1,5 @@
 .card {
+  height: 250px;
   width: 200px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -10,29 +11,22 @@
   margin: 0;
 }
 
-.card p {
-  margin: 0;
-}
 .card img {
-  width: 100%;
   max-height: 150px;
   object-fit: cover;
   border-radius: 5px;
   margin-top: 10px;
 }
-.product {
-  margin-left: 20%;
-}
-
-/* start search input style */
 .search {
+  margin-top: 30px;
   display: flex;
-  justify-content: space-between;
-  margin-top: 80px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .search input {
-  width: 67%;
   height: 45px;
+  width: 400px;
   border-radius: 5px;
   border: 2px solid hwb(120 0% 68%);
   font-size: 1em;
@@ -45,9 +39,11 @@
 }
 
 .search button {
-  margin-right: 160px;
-  height: 40px;
-  width: 20%;
+  position: relative;
+  z-index: -3;
+  left: -8px;
+  height: 45px;
+  width: 70px;
   font-size: 1em;
   background-color: hwb(120 0% 50%);
   color: white;
@@ -59,15 +55,170 @@
 .search button:hover {
   font-size: 1.1em;
 }
+#itemCreationForm {
+  display: flex;
+  justify-content: center;
+}
+.product {
+  margin-top: 30px;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.product button {
+  height: 45px;
+  width: 80px;
+}
 
 .inputs {
-  margin-top: 20px;
-  width: 165px;
-  height: 35px;
+  width: 140px;
+  height: 45px;
   background-color: white;
-  /* cursor: pointer; */
+  cursor: pointer;
   border: 2px solid rgb(0, 70, 0);
   transition: 0.3s;
   text-align: center;
   border-radius: 5px;
+}
+.cardsContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+/* !Pagination */
+
+.twoBtn {
+  width: 200px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.twoBtn button {
+  width: 60px;
+  height: 30px;
+}
+/* !Modal */
+
+#modal {
+  display: none;
+  width: 1000px;
+  height: 700px;
+  max-width: 70%;
+  margin: 25px auto;
+  border: 1px solid #998e78;
+  position: fixed;
+  top: 8%;
+  left: 15%;
+  background-color: #fff;
+}
+
+#modalLeft {
+  width: 50%;
+  height: 100%;
+}
+
+#modal-r {
+  margin-top: 20px;
+}
+
+#modalRight {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding-left: 64px;
+  padding-right: 60px;
+  margin-top: 30px;
+}
+
+#modalRight h2 {
+  font-size: 55px;
+  margin: 0px;
+}
+
+#modalRight h3 {
+  font-weight: 500;
+  font-size: 40px;
+  color: #998e78;
+  margin: 15px 0;
+}
+
+#modalRight p {
+  margin-bottom: 80px;
+  font-size: 20px;
+}
+
+#btns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.buyBtn:hover {
+  background-color: #fff;
+  color: #6e9c9f;
+  border: 2px solid #6e9c9f;
+  transition: 0.3s;
+}
+
+.buyBtn {
+  padding: 22px 50px;
+  background: #6e9c9f;
+  width: 180px;
+  height: 65px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+#closeBtn {
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: transparent;
+  width: 30px;
+  margin-left: 450px;
+  color: #4e3a14;
+}
+#icons {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  width: 250px;
+}
+#icons img {
+  width: 35px;
+  height: 35px;
+}
+
+.btnEdit {
+  width: 40%;
+  height: 5%;
+  border: 2px solid black;
+}
+.formEdit {
+  /* display: flex; */
+  margin: auto;
+  /* width: 100%; */
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+#closeEditModal {
+  height: 5%;
+  width: 5%;
+}
+.editModal {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 40%;
+}
+.editInps {
+  width: 300px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
