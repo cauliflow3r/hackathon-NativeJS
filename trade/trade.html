@@ -9,10 +9,15 @@
     <link rel="stylesheet" href="../main.css" />
   </head>
   <body>
+    <img
+      id="bg"
+      src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Elegant_Background-18.jpg"
+      alt="bg"
+    />
     <nav>
       <img src="../Container/images/image-removebg-preview.png" alt="LOGO" />
       <ul>
-        <li><a href="index.html">Main</a></li>
+        <li><a href="../index.html">Main</a></li>
         <li><a href="../Community/Community.html">Community</a></li>
         <li><a href="shop.html">Shop</a></li>
         <li><a href="./trade.html">Trade</a></li>
@@ -20,12 +25,18 @@
       </ul>
       <div class="nav-btns">
         <button id="register">Register</button>
-        <button id="sign-up">Sign up</button>
+        <button id="signIn">Sign in</button>
       </div>
     </nav>
     <section class="search">
       <input id="inpSearch" type="text" placeholder="Поиск по товарам" />
       <button>search</button>
+    </section>
+    <section class="filter">
+      <button>Food</button>
+      <button>Clothes</button>
+      <button>Handmade</button>
+      <button>Junk</button>
     </section>
     <form id="itemCreationForm">
       <div class="product">
@@ -38,6 +49,12 @@
         />
         <input placeholder="Цена" type="price" id="inpPrice" class="inputs" />
         <input placeholder="Адрес" type="text" id="address" class="inputs" />
+        <input
+          placeholder="category"
+          type="text"
+          id="category"
+          class="inputs"
+        />
         <button id="btnCreate" type="submit">Создать</button>
       </div>
     </form>

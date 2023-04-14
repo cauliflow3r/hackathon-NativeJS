@@ -2,6 +2,14 @@
   padding-left: 100px;
   display: flex;
 }
+#bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -5;
+  opacity: 0.2;
+}
+
 .forem_right {
   padding-top: 100px;
   padding-left: 200px;
@@ -94,4 +102,8 @@
   width: 300px;
   display: block;
   margin-top: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
 }

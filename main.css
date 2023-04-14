@@ -47,7 +47,7 @@ nav ul li a:hover {
 }
 
 #register,
-#sign-up {
+#signIn {
   background-color: #f1c40f;
   color: white;
   font-size: 16px;
@@ -96,4 +96,11 @@ nav ul li a:hover {
 .forum {
   display: flex;
   justify-content: space-between;
+}
+#bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -5;
+  opacity: 0.2;
 }

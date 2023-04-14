@@ -12,6 +12,8 @@ let nextBtn = document.querySelector("#nextBtn");
 let inpSearch=document.querySelector("#inpSearch")
 let currentPage = 1; 
 let pageLength = 1;
+
+let filterValue = "Вcё"
 // *EDIT 
 let editInpName = document.querySelector("#editInpName")
 let editInpImage = document.querySelector("#editInpImage")
@@ -20,17 +22,19 @@ let editInpPrice = document.querySelector("#editInpPrice")
 let editInpDesc = document.querySelector("#editInpDesc")
 let btnSave = document.querySelector("#editForm button")
 let closeBtn = document.querySelector("#closeEditModal")
+// !FILTER
+let filterBtns = document.querySelectorAll(".filter button")
 
 
 
-filterValue = "Вcё"
+
 async function readItems(search = "") {
   let res =
     filterValue !== "Все"
       ? await fetch(
           `${itemsAPI}?q=${search}&_page=${currentPage}&_limit=6&category=${filterValue}`
         )
-      : await fetch(`${API}?q=${search}&_page=${currentPage}&_limit=6`);
+      : await fetch(`${API}?q=${search}&_page=${currentPage}&_limit=6&category=${filterValue}`);
   let data = await res.json();
   cardsContainer.innerHTML = ""; 
   console.log(data)
@@ -61,6 +65,10 @@ async function createItem(itemData) {
     body: JSON.stringify(itemData)
   });
   readItems(); 
+  itemImage.value="",
+  itemName.value="",
+  itemPrice.value="",
+  itemAddress.value=""
 }
 readItems()
 
@@ -198,4 +206,14 @@ async function editItems(editedProfile, id) {
 
 closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
+});
+
+// !FIlter
+filterBtns.forEach((elem) => {
+  elem.addEventListener("click", () => {
+    // console.log(elem.innerText);
+    filterValue = elem.innerHTML;
+    // readProfile();
+   readItems()
+  });
 });

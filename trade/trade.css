@@ -6,6 +6,13 @@
   padding: 10px;
   margin: 10px;
 }
+#bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -5;
+  opacity: 0.2;
+}
 
 .card h3 {
   margin: 0;
@@ -221,4 +228,22 @@
   width: 300px;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+.filter {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter button {
+  max-width: 400px;
+  height: 45px;
+  padding: 10px;
+  background-color: whitesmoke;
+  border: sandybrown 3px solid;
+}
+.nav-btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
